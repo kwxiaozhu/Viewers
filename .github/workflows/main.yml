@@ -16,7 +16,7 @@ jobs:
           cmd: install # will run `yarn install` command
       - uses: borales/actions-yarn@v2.0.0
         with:
-          cmd: build:package # will run `yarn build` command
+          cmd: build:package-all # will run `yarn build` command
       - name: Upload bin directory
         uses: actions/upload-artifact@master
         with:
