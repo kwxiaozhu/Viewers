@@ -19,7 +19,6 @@ jobs:
           cmd: build:package # will run `yarn build` command
       - name: Upload bin directory
         uses: actions/upload-artifact@master
-        if: steps.compile.outputs.status == 'success' 
         with:
           name: OHIF
           path: platform/viewer/dist/
